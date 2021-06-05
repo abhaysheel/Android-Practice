@@ -38,4 +38,63 @@
         app:layout_constraintEnd_toEndOf="@+id/cbBarry"
         app:layout_constraintStart_toStartOf="@+id/cbBarry"
         app:layout_constraintTop_toBottomOf="@+id/cbBarry" />
+
+    <RadioGroup
+        android:id="@+id/rgMarital"
+        android:layout_width="271dp"
+        android:layout_height="88dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSilval"
+        app:layout_constraintVertical_bias="0.222">
+
+        <RadioButton
+            android:id="@+id/rbMarried"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Married" />
+
+        <RadioButton
+            android:id="@+id/rbSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Single" />
+
+        <RadioButton
+            android:id="@+id/rbRelation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="Relationship" />
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/pbCircle"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgMarital"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <ProgressBar
+        android:id="@+id/pbHorizontal"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="388dp"
+        android:layout_height="34dp"
+        android:max="100"
+        android:progressTint="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbCircle" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
