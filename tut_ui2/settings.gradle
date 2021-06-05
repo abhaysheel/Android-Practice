@@ -1,0 +1,2 @@
+rootProject.name = "tut_ui2"
+include ':app'
