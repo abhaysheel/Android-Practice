@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">tut_listView</string>
+    <string-array name="students">
+        <item>Abhay1</item>
+        <item>Abhay2</item>
+        <item>Abhay3</item>
+        <item>Abhay4</item>
+        <item>Abhay5</item>
+    </string-array>
 </resources>
